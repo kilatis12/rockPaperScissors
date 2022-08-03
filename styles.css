@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700;800;900&display=swap');
+
+* { 
+	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Inconsolata', monospace;
+}
+
+.hidden {
+    display: none;
+}
+
+.rockpaperscissors {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rockpaperscissors > .interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+    gap: 1em;
+    box-shadow: 0 0 0 0 black;
+    transition: .05s ease;
+}
+
+.rockpaperscissors > .interface:hover {
+    box-shadow: 4px 6px 0px 1px black;
+    transform: translate(-5px, -5px);
+}
+
+
+
+.rockpaperscissors > .interface > .scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rockpaperscissors > .interface > .scoreboard > .scores {
+    display: flex;
+    gap: .4em;
+}
+
+.rockpaperscissors > .interface > .scoreboard > h3 {
+    font-size: 1.5em;
+}
+
+.rockpaperscissors > .interface > .buttons > button{
+    border: 1px solid black;
+    background-color: transparent;
+    padding: .2em 1em;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.rockpaperscissors > .interface > .buttons > button:active {
+    transform: scale(.9);
+}
+
+.rockpaperscissors > .interface > .result {
+    flex-direction: column;
+    align-items: center;
+}
+
+.rockpaperscissors > .interface > .result > button {
+    border: 1px solid black;
+    background-color: transparent;
+    padding: .2em 1em;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.rockpaperscissors > .interface > .result > button:active {
+    transform: scale(.9);
+}
